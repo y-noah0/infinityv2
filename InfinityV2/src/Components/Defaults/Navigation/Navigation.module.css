@@ -38,13 +38,16 @@
     align-items: center; 
     justify-content: center;
     background-color: var(--color-primary-green);
-    color: white;
     text-decoration: none;
     border-radius: 5px;
     width: 160px;
     height: 46px;
 }
-
+.btn_register:hover{
+    background-color: white;
+    color: var(--color-primary-green);
+    border: 2px solid var(--color-primary-green);
+}
 .navList li a:hover {
     text-decoration: none;
     color: var(--color-primary-green);
@@ -76,6 +79,9 @@
 .nav a{
     text-decoration: none;
     color: white;
+}
+.nav a:hover{
+    color: var(--color-primary-green);
 }
 
 @media screen and (max-width: 768px) {

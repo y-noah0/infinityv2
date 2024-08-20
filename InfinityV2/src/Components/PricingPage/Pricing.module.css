@@ -124,16 +124,18 @@ body {
     justify-content: flex-start;
     gap: var(--gap-sm-8);
 }
-.labelName {
+.labelName button{
     position: relative;
     letter-spacing: 0.34px;
     line-height: 150%;
     font-weight: 600;
 }
-.button {
+.button button {
     width: 230px;
+    border: 1px solid var(--primary-base);
     border-radius: 4.86px;
-    background-color: var(--primary-base);
+    color: var(--primary-base);
+    background-color: var(--others-white);
     height: 51.8px;
     display: flex;
     flex-direction: row;
@@ -141,6 +143,11 @@ body {
     justify-content: center;
     padding: var(--padding-4xl-7) var(--padding-8xl-1);
     box-sizing: border-box;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: var(--primary-base);
+    color: var(--others-white);
 }
 .primary {
     width: 230px;
@@ -310,7 +317,7 @@ body {
     font-size: 34.01px;
     color: var(--www-getfinvest-com-1440x761-black-pearl);
 }
-.button2 {
+.button2 button{
     width: 212.2px;
     border-radius: 3.39px;
     height: 51.8px;
@@ -318,10 +325,11 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: var(--padding-4xl-7) var(--padding-8xl-1);
+    background-color: var(--primary-100);
+    padding: 15px;
     box-sizing: border-box;
 }
-.primary2 {
+.primary2 button{
     width: 230px;
     border-radius: 4.86px;
     border: 1.1px solid var(--primary-base);
@@ -331,9 +339,14 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    letter-spacing: 0.34px;
     text-align: center;
-    font-size: 15.81px;
+    font-size: 13px;
     color: var(--primary-base);
+}
+.primary2 button:hover{
+    background-color: var(--primary-base);
+    color: var(--primary-100);
 }
 .frameParent7 {
     width: 193.6px;

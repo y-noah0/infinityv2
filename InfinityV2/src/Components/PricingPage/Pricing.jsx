@@ -8,6 +8,7 @@ function Pricing() {
     return(
         <div>
             <Navigation/>
+			<div>
             <div className={styles.featureSection}>
       			<div className={styles.featureSectionChild} />
       			<div className={styles.pricingPlanCategoriesParent}>
@@ -29,7 +30,11 @@ function Pricing() {
             						</div>
             						<div className={styles.primary}>
               							<div className={styles.button}>
-                								<div className={styles.labelName}>Choose plan</div>
+                								<div className={styles.labelName}>
+													  <button>
+													     Choose plan
+													  </button>
+													</div>
               							</div>
             						</div>
             						<div className={styles.pricingParent}>
@@ -94,7 +99,9 @@ function Pricing() {
             						</div>
             						<div className={styles.primary}>
               							<div className={styles.button}>
-                								<div className={styles.labelName}>Choose plan</div>
+                								<div className={styles.labelName}> <button>
+													     Choose plan
+													  </button></div>
               							</div>
             						</div>
             						<div className={styles.pricingParent}>
@@ -165,7 +172,9 @@ function Pricing() {
             						</div>
             						<div className={styles.primary2}>
               							<div className={styles.button2}>
-                								<div className={styles.labelName}>Choose plan</div>
+                								<div className={styles.labelName}> <button>
+													     Choose plan
+													  </button></div>
               							</div>
             						</div>
             						<div className={styles.pricingParent}>
@@ -234,7 +243,9 @@ function Pricing() {
             						</div>
             						<div className={styles.primary2}>
               							<div className={styles.button2}>
-                								<div className={styles.labelName}>Choose plan</div>
+                								<div className={styles.labelName}> <button>
+													     Choose plan
+													  </button></div>
               							</div>
             						</div>
             						<div className={styles.pricingParent}>
@@ -295,6 +306,7 @@ function Pricing() {
         				</div>
       			</div>
     		</div>
+        </div>
           
             <Footer/>
         </div>
