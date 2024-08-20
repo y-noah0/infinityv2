@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    line-height: normal;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    /* Font Sizes */
+    --font-size-sm: 14px;
+    --body-xlarge-regular-size: 12px;
+    --heading-h4-size: 32px; /* Updated for larger heading font */
+    
+    /* Colors */
+    --others-white: #fff;
+    --primary-base: #01a653;
+    --greyscale-600: #687588;
+    --greyscale-300: #e9eaec;
+    --greyscale-500: #a0aec0;
+
+    /* Gaps */
+    --gap-5xs: 8px;
+    --gap-lg: 20px;
+    --gap-xl: 40px;
+
+    /* Paddings */
+    --padding-2xl: 10px;
+    --padding-5xl: 24px;
+
+    /* Border Radius */
+    --br-10xs: 8px; /* Slightly increased for a softer look */
+}
+
+.signupPage {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--others-white);
+}
+
+.leftSection {
+    position: relative;
+    width: 50%;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    z-index: 2; /* Ensures it appears above other elements */
+}
+
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: var(--others-white);
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.rightSection {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px; /* Adjusted padding for a more centered look */
+    background-color: var(--others-white);
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-5xs);
+
+}
+
+.createYourAccount {
+    font-size: var(--heading-h4-size);
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.welcomeToInfinity {
+    font-size: var(--body-xlarge-regular-size);
+    line-height: 150%;
+    color: var(--greyscale-600);
+    margin-bottom: var(--gap-xl);
+}
+
+.textField, 
+.textArea {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--br-10xs);
+    border: 1px solid var(--greyscale-300);
+    font-size: var(--body-xlarge-regular-size);
+    color: var(--greyscale-600);
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+   
+}
+
+.textField::placeholder, 
+.textArea::placeholder {
+    color: var(--greyscale-500);
+}
+
+.textArea {
+    height: 120px;
+    resize: none;
+}
+
+.terms {
+    font-size: var(--body-xlarge-regular-size);
+    color: var(--greyscale-600);
+}
+
+.terms input {
+    margin-right: 8px;
+}
+
+.terms a {
+    color: var(--primary-base);
+    text-decoration: underline;
+}
+
+.signupButton {
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--br-10xs);
+    background-color: var(--primary-base);
+    color: var(--others-white);
+    font-size: var(--body-xlarge-regular-size);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.signinPrompt {
+    font-size: var(--body-xlarge-regular-size);
+    text-align: center;
+    color: var(--greyscale-600);
+}
+
+.signinPrompt a {
+    color: var(--primary-base);
+    text-decoration: underline;
+}

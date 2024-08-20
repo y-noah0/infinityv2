@@ -1,0 +1,48 @@
+.featurePageFive {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.featurePageFive .image img {
+    width: 550px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: max-content;
+}
+
+.title {
+    font-size: 18px;
+    text-align: start;
+}
+
+.title p {
+    max-width: 450px;
+}
+
+.detailPoints img {
+    width: 32px;
+}
+
+.point {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: start;
+}
+
+.point p {
+    max-width: 450px;
+}

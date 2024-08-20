@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+body {
+  	margin: 0; line-height: normal;
+}
+:root {
+  	
+  	/* fonts */
+  	--body-xlarge-regular: Outfit;
+  	--font-ibm-plex-sans: 'IBM Plex Sans';
+  	
+  	/* font sizes */
+  	--font-size-sm-5: 13.5px;
+  	--font-size-sm-6: 13.6px;
+  	--font-size-base-8: 15.8px;
+  	--font-size-3xs-1: 9.1px;
+  	--font-size-15xl: 34px;
+  	--body-xlarge-regular-size: 18px;
+  	--heading-h2-size: 40px;
+  	
+  	/* Colors */
+  	--others-white: #fff;
+  	--greyscale-400: #cbd5e0;
+  	--greyscale-600: #687588;
+  	--greyscale-900: #111827;
+  	--www-getfinvest-com-1440x761-black-pearl: #071a34;
+  	--primary-base: #01a653;
+  	--color-dimgray: #52525b;
+  	--primary-100: #f5ffec;
+  	--primary-300: #a7e071;
+  	
+  	/* Gaps */
+  	--gap-lg-1: 18.1px;
+  	--gap-sm-5: 13.5px;
+  	--gap-6xs-8: 6.8px;
+  	--gap-sm-8: 13.8px;
+  	
+  	/* Paddings */
+  	--padding-lg-1: 18.1px;
+  	--padding-4xl-7: 23.7px;
+  	--padding-8xl-1: 27.1px;
+  	
+  	/* Border radiuses */
+  	--br-4xs: 9px;
+  	--br-8xs-5: 4.5px;
+  	--br-8xs-9: 4.9px;
+  	--br-9xs-4: 3.4px;
+  	
+}
+
+
+
+.featureSectionChild {
+    position: absolute;
+    top: 411px;
+    left: calc(50% - 289px);
+    filter: blur(1000px);
+    border-radius: 50%;
+    background-color: var(--primary-300);
+    width: 578px;
+    height: 578px;
+}
+.pricingPlanCategories {
+    width: 656px;
+    position: relative;
+    line-height: 120%;
+    display: inline-block;
+}
+.ourPosSystem {
+    align-self: stretch;
+    position: relative;
+    font-size: var(--body-xlarge-regular-size);
+    line-height: 150%;
+    color: var(--greyscale-600);
+}
+.pricingPlanCategoriesParent {
+    position: absolute;
+    top: 141px;
+    left: calc(50% - 343px);
+    width: 686px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.starterPlan {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.23px;
+    line-height: 160%;
+}
+.div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 37.42px;
+    font-weight: 500;
+}
+.month1 {
+    font-family: var(--body-xlarge-regular);
+}
+.month {
+    position: absolute;
+    top: 21.54px;
+    left: 106.1px;
+    font-size: 9.07px;
+    line-height: 13.61px;
+    color: var(--color-dimgray);
+    font-family: var(--font-ibm-plex-sans);
+}
+.price {
+    width: 138.1px;
+    position: relative;
+    height: 38px;
+    font-size: 34.01px;
+    color: var(--www-getfinvest-com-1440x761-black-pearl);
+}
+.starterPlanParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-sm-8);
+}
+.labelName {
+    position: relative;
+    letter-spacing: 0.34px;
+    line-height: 150%;
+    font-weight: 600;
+}
+.button {
+    width: 230px;
+    border-radius: 4.86px;
+    background-color: var(--primary-base);
+    height: 51.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-4xl-7) var(--padding-8xl-1);
+    box-sizing: border-box;
+}
+.primary {
+    width: 230px;
+    border-radius: 4.86px;
+    height: 51.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 15.81px;
+    color: var(--others-white);
+}
+.subtractIcon {
+    width: 13.5px;
+    position: relative;
+    height: 13.5px;
+}
+.annualSubscription53989y {
+    width: 171.7px;
+    position: relative;
+    letter-spacing: 0.17px;
+    line-height: 150%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.subtractParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-sm-5);
+}
+.frameContainer {
+    width: 127.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-6xs-8);
+    font-size: var(--font-size-sm-5);
+    color: var(--greyscale-600);
+}
+.pricingParent {
+    width: 149px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-sm-5);
+}
+.posTerminal {
+    position: relative;
+    letter-spacing: 0.17px;
+    line-height: 150%;
+}
+.basicReportingDaily {
+    width: 166px;
+    position: relative;
+    letter-spacing: 0.17px;
+    line-height: 150%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.softwarePackageParent {
+    width: 194.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-sm-5);
+}
+.frameGroup {
+    position: absolute;
+    top: calc(50% - 335.19px);
+    left: calc(50% - 114.61px);
+    border-radius: 4.52px;
+    background-color: var(--others-white);
+    width: 230.3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-lg-1) 0px;
+    box-sizing: border-box;
+    gap: var(--gap-lg-1);
+}
+.frameWrapper {
+    width: 284.3px;
+    position: relative;
+    border-radius: 9.03px;
+    background-color: var(--others-white);
+    border: 1.1px solid var(--greyscale-400);
+    box-sizing: border-box;
+    height: 728.1px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.frameParent4 {
+    width: 192.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-6xs-8);
+    font-size: var(--font-size-sm-5);
+    color: var(--greyscale-600);
+}
+.frameParent2 {
+    position: absolute;
+    top: calc(50% - 334.82px);
+    left: calc(50% - 115.01px);
+    border-radius: 4.52px;
+    background-color: var(--others-white);
+    width: 230.3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-lg-1) 0px;
+    box-sizing: border-box;
+    gap: var(--gap-lg-1);
+}
+.frameChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--primary-base);
+    width: 285.1px;
+    height: 25.9px;
+}
+.mostPopular {
+    position: absolute;
+    top: 6.56px;
+    left: calc(50% - 35.64px);
+    font-size: 9.17px;
+    letter-spacing: 0.18px;
+    line-height: 160%;
+    font-weight: 600;
+    color: var(--primary-100);
+}
+.frameParent1 {
+    width: 285.1px;
+    position: relative;
+    border-radius: 9.03px;
+    background-color: var(--others-white);
+    border: 1.1px solid var(--greyscale-400);
+    box-sizing: border-box;
+    height: 728.1px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.month4 {
+    position: absolute;
+    top: 21.54px;
+    left: 118.25px;
+    font-size: 9.07px;
+    line-height: 13.61px;
+    color: var(--color-dimgray);
+    font-family: var(--font-ibm-plex-sans);
+}
+.price2 {
+    width: 150.2px;
+    position: relative;
+    height: 38px;
+    font-size: 34.01px;
+    color: var(--www-getfinvest-com-1440x761-black-pearl);
+}
+.button2 {
+    width: 212.2px;
+    border-radius: 3.39px;
+    height: 51.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-4xl-7) var(--padding-8xl-1);
+    box-sizing: border-box;
+}
+.primary2 {
+    width: 230px;
+    border-radius: 4.86px;
+    border: 1.1px solid var(--primary-base);
+    box-sizing: border-box;
+    height: 51.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 15.81px;
+    color: var(--primary-base);
+}
+.frameParent7 {
+    width: 193.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-6xs-8);
+    font-size: var(--font-size-sm-5);
+    color: var(--greyscale-600);
+}
+.frameParent5 {
+    position: absolute;
+    top: calc(50% - 341.3px);
+    left: calc(50% - 114.61px);
+    border-radius: 4.52px;
+    background-color: var(--others-white);
+    width: 230.3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-lg-1) 0px;
+    box-sizing: border-box;
+    gap: var(--gap-lg-1);
+}
+.frameParent8 {
+    position: absolute;
+    top: calc(50% - 344.68px);
+    left: calc(50% - 114.61px);
+    border-radius: 4.52px;
+    background-color: var(--others-white);
+    width: 230.3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-lg-1) 0px;
+    box-sizing: border-box;
+    gap: var(--gap-lg-1);
+}
+.frameParent {
+    position: absolute;
+    top: 415.44px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 34px;
+    text-align: left;
+    font-size: 13.55px;
+    color: var(--greyscale-900);
+}
+.featureSection {
+    width: 100%;
+    position: relative;
+    background-color: var(--others-white);
+    height: 1291px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: var(--heading-h2-size);
+    color: #000;
+    font-family: var(--body-xlarge-regular);
+}
+
