@@ -3,7 +3,7 @@ import styles from './Faq.module.css';
 import arrowDown from '../../../assets/Faq/arrow2-down.png';
 import arrowUp from '../../../assets/Faq/arrow2-up.png';  
 
-// Move FaqItem outside of Faq component
+
 function FaqItem({ question, answer }) {
     const [isOpen, setIsOpen] = useState(false);
 
