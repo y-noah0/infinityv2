@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+:root {
+   
+    --body-xlarge-regular: Outfit;
+    
+
+    --body-xlarge-regular-size: 18px;
+    --heading-h3-size: 32px;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --greyscale-600: #687588;
+    --primary-300: #a7e071;
+    
+
+    --br-10xs: 3px;
+}
+
+.featureSection {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1104px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: var(--heading-h3-size);
+    color: var(--color-black);
+    font-family: var(--body-xlarge-regular);
+}
+
+.featureSectionChild {
+    position: absolute;
+    top: 411px;
+    left: calc(50% - 289px);
+    filter: blur(1000px);
+    border-radius: 50%;
+    background-color: var(--primary-300);
+    width: 578px;
+    height: 578px;
+}
+
+.featureSectionInner {
+    position: absolute;
+    top: calc(50% - 340px);
+    left: calc(50% - 263px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.frequentlyAskedQuestions {
+    position: absolute;
+    top: 117px;
+    left: calc(50% - 250px);
+    line-height: 125%;
+    display: inline-block;
+    width: 500px;
+    font-size: var(--heading-h3-size);
+    font-weight: bold;
+}
+
+.frameParent {
+    position: absolute;
+    top: 263px;
+    left: calc(50% - 515px);
+    width: 1030px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    text-align: left;
+    font-size: var(--body-xlarge-regular-size);
+}
+
+.fqaCard {
+    width: 100%;
+    border-radius: var(--br-10xs);
+    background-color: var(--color-white);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fqaCardHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: var(--body-xlarge-regular-size);
+    font-weight: bold;
+    color: var(--greyscale-600);
+}
+
+.question {
+    flex-grow: 1;
+}
+
+.arrowIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.answer {
+    padding: 20px;
+    border-top: 1px solid var(--greyscale-600);
+    background-color: #f9f9f9;
+    color: var(--greyscale-600);
+    line-height: 1.5;
+}

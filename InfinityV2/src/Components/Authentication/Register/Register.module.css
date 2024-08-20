@@ -7,29 +7,28 @@ body {
 }
 
 :root {
-    /* Font Sizes */
+   
     --font-size-sm: 14px;
     --body-xlarge-regular-size: 12px;
-    --heading-h4-size: 32px; /* Updated for larger heading font */
+    --heading-h4-size: 32px; 
     
-    /* Colors */
+    
     --others-white: #fff;
     --primary-base: #01a653;
     --greyscale-600: #687588;
     --greyscale-300: #e9eaec;
     --greyscale-500: #a0aec0;
 
-    /* Gaps */
+ 
     --gap-5xs: 8px;
     --gap-lg: 20px;
     --gap-xl: 40px;
 
-    /* Paddings */
+  
     --padding-2xl: 10px;
     --padding-5xl: 24px;
 
-    /* Border Radius */
-    --br-10xs: 8px; /* Slightly increased for a softer look */
+    --br-10xs: 8px; 
 }
 
 .signupPage {
@@ -49,7 +48,7 @@ body {
     top: 20px;
     left: 20px;
     width: 150px;
-    z-index: 2; /* Ensures it appears above other elements */
+    z-index: 2;
 }
 
 
@@ -78,7 +77,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px; /* Adjusted padding for a more centered look */
+    padding: 40px; 
     background-color: var(--others-white);
 }
 

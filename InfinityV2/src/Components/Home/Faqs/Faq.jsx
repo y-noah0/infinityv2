@@ -1,9 +1,77 @@
-// import style from './faq.module.css';
-function Faq() {
-    return(
-        <div>
-            <h1>Faq</h1>
+import React, { useState } from 'react';
+import styles from './Faq.module.css';
+import arrowDown from '../../../assets/Faq/arrow2-down.png';
+import arrowUp from '../../../assets/Faq/arrow2-up.png';  
+
+const FaqItem = ({ question, answer }) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleOpen = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className={styles.fqaCard} onClick={toggleOpen}>
+            <div className={styles.fqaCardHeader}>
+                <div className={styles.question}>{question}</div>
+                <img 
+                    className={styles.arrowIcon} 
+                    src={isOpen ? arrowUp : arrowDown} 
+                    alt="Toggle Answer" 
+                />
+            </div>
+            {isOpen && (
+                <div className={styles.answer}>
+                    {answer}
+                </div>
+            )}
         </div>
-    )
-}
+    );
+};
+
+const Faq = () => {
+    const faqData = [
+        {
+            question: "What types of consulting services do you offer?",
+            answer: "The upfront costs for Toast are hardware and implementation****, which vary depending on your specific hardware packages and installation needs. We have flexible payment options available, including payment as a "
+        },
+        {
+            question: "What types of consulting services do you offer?",
+            answer: "The upfront costs for Toast are hardware and implementation, which vary depending on your specific hardware packages and installation needs. We have flexible payment options available, including payment as a..."
+        },
+        {
+            question: "What types of consulting services do you offer?",
+            answer: "The upfront costs for Toast are hardware and implementation, which vary depending on your specific hardware packages and installation needs. We have flexible payment options available, including payment as a..."
+        },
+        {
+            question: "What types of consulting services do you offer?",
+            answer: "The upfront costs for Toast are hardware and implementation, which vary depending on your specific hardware packages and installation needs. We have flexible payment options available, including payment as a..."
+        },
+        {
+            question: "What types of consulting services do you offer?",
+            answer: "The upfront costs for Toast are hardware and implementation, which vary depending on your specific hardware packages and installation needs. We have flexible payment options available, including payment as a..."
+        },
+        
+    ];
+
+    return (
+        <div className={styles.featureSection}>
+            <div className={styles.featureSectionChild} />
+            <div className={styles.featureSectionInner}>
+                <div className={styles.frameChild} />
+            </div>
+            <b className={styles.frequentlyAskedQuestions}>Frequently Asked Questions</b>
+            <div className={styles.frameParent}>
+                {faqData.map((item, index) => (
+                    <FaqItem 
+                        key={index} 
+                        question={item.question} 
+                        answer={item.answer} 
+                    />
+                ))}
+            </div>
+        </div>
+    );
+};
+
 export default Faq;

@@ -1,5 +1,5 @@
 import styles from './signin.module.css';
-import backgroundImage from '../../../assets/Authentication/coffeshop.png'; // Update the path accordingly
+import backgroundImage from '../../../assets/Authentication/coffeshop.png';
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {

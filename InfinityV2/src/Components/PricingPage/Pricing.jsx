@@ -3,7 +3,7 @@ import Navigation from "../Defaults/Navigation/Navigation";
 import styles from './Pricing.module.css';
 import Tick from '../../assets/Pricing/Subtract.png'
 
-// import style from './Pricing.module.css';
+
 function Pricing() {
     return(
         <div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Register.module.css';
-import logo from '../../../assets/Authentication/logo.png'; // Update the path accordingly
-import backgroundImage from '../../../assets/Authentication/coffeshop.png'; // Update the path accordingly
+import logo from '../../../assets/Authentication/logo.png'; 
+import backgroundImage from '../../../assets/Authentication/coffeshop.png'; 
 
 const Register = () => {
     return (
@@ -23,7 +23,9 @@ const Register = () => {
                     <input type="text" placeholder="Enter Your location" className={styles.textField} />
                     <select className={styles.textField}>
                         <option value="" disabled selected>Select Business Category</option>
-                        {/* Add options here */}
+                        <option value="">coffeshop</option>
+                        <option value="">Bar</option>
+                        <option value="">Reasturant</option>
                     </select>
                     <textarea placeholder="Description" className={styles.textArea}></textarea>
                     <button className={styles.signupButton}>Sign Up</button>

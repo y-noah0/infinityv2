@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+body {
+  	margin: 0; line-height: normal;
+}
+:root {
+  	
+
+  	--body-xlarge-regular: Outfit;
+
+  	--font-size-sm: 14px;
+  	--body-xlarge-regular-size: 18px;
+  	--heading-h1-size: 48px;
+  	
+
+  	--primary-base: #01a653;
+  	--others-white: #fff;
+  	--primary-100: #f5ffec;
+  	--greyscale-700: #323b49;
+  	--greyscale-50: #fafafa;
+  	
+
+  	--gap-5xl: 24px;
+  	
+  
+  	--padding-2xl: 21px;
+  	--padding-5xl: 24px;
+  	
+  
+  	--br-10xs: 3px;
+  	
+}
+
+
+
+.rectangleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    width: 100%;
+    position: relative;
+    background-image: url("/src/assets/CallToAction/darker_image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 581px;
+}
+.pc1Icon {
+    width: 100%;
+    position: relative;
+    max-width: 400px;
+    overflow: hidden;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+
+.posSolution {
+    color: var(--primary-base);
+}
+.upgradeYourBusinessContainer {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.5px;
+    line-height: 120%;
+}
+.ourPosSystem {
+    width: 456px;
+    position: relative;
+    font-size: var(--body-xlarge-regular-size);
+    line-height: 150%;
+    color: var(--greyscale-50);
+    display: inline-block;
+}
+.labelName button {
+    position: relative;
+    letter-spacing: 0.3px;
+    line-height: 150%;
+    font-weight: 600;
+}
+.button  button{
+    align-self: stretch;
+    width: 182px;
+    border: 1px solid var(--primary-base);
+    border-radius: var(--br-10xs);
+    background-color: var(--primary-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px var(--padding-5xl);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.button  button:hover{
+    background-color: var(--primary-base);
+    color: white;
+}
+.primary {
+    width: 182px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.button1 button{
+    color: #fff;
+    align-self: stretch;
+    width: 182px;
+    border: 1px solid var(--primary-base);
+    border-radius: var(--br-10xs);
+    background-color: var(--primary-base);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px var(--padding-5xl);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.button1 button:hover{
+    background-color: var(--primary-100);
+    color: black;
+}
+.primary1 {
+    width: 182px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--others-white);
+}
+.primaryParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--greyscale-700);
+}
+.upgradeYourBusinessWithOurParent {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+    text-align: left;
+    font-size: var(--heading-h1-size);
+    color: var(--others-white);
+    font-family: var(--body-xlarge-regular);
+}
+

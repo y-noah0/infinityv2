@@ -8,12 +8,12 @@ body {
 
   .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 60px;
+    gap: 250px;
   }
 
   .left_section {
@@ -75,12 +75,12 @@ body {
   @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        gap: 20px; /* Adjust gap for smaller screens */
+        gap: 20px; 
     }
 
     .left_section, .right_section {
         width: 100%;
-        padding: 0; /* Remove padding if needed */
+        padding: 0;
     }
     .card{
         align-items: center;

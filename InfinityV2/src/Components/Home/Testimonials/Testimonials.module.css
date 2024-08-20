@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+body {
+  	margin: 0; line-height: normal;
+}
+:root {
+  	
+  	/* fonts */
+  	--body-large-bold: Outfit;
+  	
+  	/* font sizes */
+  	--body-xlarge-regular-size: 18px;
+  	--body-large-bold-size: 16px;
+  	--heading-h3-size: 32px;
+  	
+  	/* Colors */
+  	--others-white: #fff;
+  	--color-whitesmoke: #f4f1f1;
+  	--primary-base: #01a653;
+  	--greyscale-700: #323b49;
+  	--greyscale-500: #a0aec0;
+  	--color-black: #000;
+  	--primary-200: #e3f6d1;
+  	
+  	/* Gaps */
+  	--gap-5xl: 24px;
+  	
+  	/* Paddings */
+  	--padding-base: 16px;
+  	
+  	/* Border radiuses */
+  	--br-81xl: 100px;
+  	
+  	/* Effects */
+  	--shadow: -2px 4px 30.8px 7px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+.trustedByOver {
+    position: absolute;
+    top: 107px;
+    left: calc(50% - 275px);
+    line-height: 125%;
+    display: inline-block;
+    width: 550px;
+}
+.featureSectionChild {
+    position: absolute;
+    top: 1378px;
+    left: 835px;
+    width: 505px;
+    height: 389px;
+}
+.restaurant {
+    width: 161px;
+    position: relative;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+    flex-shrink: 0;
+}
+.restaurantWrapper {
+    border-radius: 18px;
+    background-color: var(--primary-200);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.speedOfService {
+    align-self: stretch;
+    position: relative;
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 500;
+    color: var(--color-black);
+    text-align: left;
+}
+.frameGroup {
+    width: 505px;
+    border-bottom: 1px solid var(--greyscale-500);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px 0px;
+    gap: var(--gap-5xl);
+}
+.frameWrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.jackManzi {
+    width: 102px;
+    position: relative;
+    letter-spacing: 0.3px;
+    line-height: 150%;
+    display: inline-block;
+}
+.ceo {
+    position: relative;
+    line-height: 150%;
+}
+.frameChild {
+    width: 1px;
+    position: relative;
+    background-color: #d9d9d9;
+    height: 21px;
+}
+.ceoParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    font-size: var(--body-xlarge-regular-size);
+    color: var(--primary-base);
+}
+.jackManziParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    text-align: left;
+    font-size: var(--body-large-bold-size);
+    color: var(--greyscale-700);
+}
+.frameParent {
+    position: absolute;
+    top: 535px;
+    left: 774px;
+    width: 505px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+    font-size: var(--body-xlarge-regular-size);
+    color: var(--primary-base);
+}
+.featureSectionItem {
+    position: absolute;
+    top: 441px;
+    left: 106px;
+    border-radius: 14px;
+    width: 581px;
+    height: 508px;
+    object-fit: cover;
+}
+.chevronRightIcon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transform:  rotate(-180deg);
+}
+.back {
+    box-shadow: var(--shadow);
+    border-radius: var(--br-81xl);
+    background-color: var(--others-white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-base);
+    transform:  rotate(180deg);
+    cursor: pointer;
+}
+.chevronRightIcon1 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.back1 {
+    box-shadow: var(--shadow);
+    border-radius: var(--br-81xl);
+    background-color: var(--others-white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-base);
+    cursor: pointer;
+}
+.backParent {
+    position: absolute;
+    top: 610px;
+    left: 78px;
+    width: 1286px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.frameItem {
+    width: 16px;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--color-whitesmoke);
+    height: 16px;
+}
+.frameChild1 {
+    width: 16px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #838181;
+    height: 16px;
+}
+.ellipseParent {
+    position: absolute;
+    top: 1046px;
+    left: calc(50% - 45px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.logoIcon {
+    width: 165px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+.logoIcon1 {
+    width: 107px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+.logoIcon2 {
+    width: 145px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+.logoIcon3 {
+    width: 80px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+.logoIcon4 {
+    width: 146px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 113px;
+}
+.logosWrapper {
+    position: absolute;
+    top: 278px;
+    left: calc(50% - 547px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.featureSection {
+    width: 100%;
+    position: relative;
+    background-color: var(--others-white);
+    height: 1140px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: var(--heading-h3-size);
+    color: var(--color-black);
+    font-family: var(--body-large-bold);
+}
+
+

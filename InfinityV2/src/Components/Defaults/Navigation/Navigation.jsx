@@ -25,7 +25,7 @@ function Navigation() {
                     <li><Link to={'/Pricing'}>Pricing</Link></li>
                     <li><Link>Contact Us</Link></li>
                 </ul>
-                <Link to={'/Register'}><a  className={style.btn_register}>Register</a></Link>
+                <a  className={style.btn_register}><Link to={'/Register'}>Register</Link></a>
             </nav>
         </div>
     );
