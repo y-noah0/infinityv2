@@ -20,6 +20,10 @@
 .columns p, li{
     color: #687588;
 }
+.columns p a{
+    color: #687588;
+    text-decoration: none;
+}
 .links{
     display: flex;
     justify-content:space-between;

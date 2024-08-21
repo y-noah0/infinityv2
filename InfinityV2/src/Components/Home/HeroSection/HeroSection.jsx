@@ -13,8 +13,8 @@ const HeroSection = () => {
         alimentation, salons, and more.
       </p>
       <div className={styles.buttonGroup}>
-        <button className={`${styles.button} ${styles.primaryButton}`}>Get a Demo</button>
-        <button className={`${styles.button} ${styles.secondaryButton}`}>Get Started</button>
+        <button className={`${styles.button} ${styles.primaryButton}`}> <a href="">Get a Demo</a> </button>
+        <button className={`${styles.button} ${styles.secondaryButton}`}> <a href="/Register">Get Started</a> </button>
       </div>
     </div>
     <div className={styles.imageContainer}>

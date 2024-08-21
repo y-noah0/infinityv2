@@ -11,6 +11,7 @@ import youtube from '../../../assets/Footer/youtube.png'
 
 
 function Footer() {
+   
     return(
         <div className={style.container}>
             <div className={style.links}>
@@ -37,23 +38,23 @@ function Footer() {
 
                 </div>
                 <div className={style.columns}>
-                    <h2>Customers</h2>
-                    <p>Sign In</p>
-                    <p>Features</p>
-                    <p>Pricing</p>
-                    <p>Refer a Restaurant</p>
-                </div>
+            <h2>Customers</h2>
+            <p><a href='/Login' >Sign In</a></p>
+            <p><a href='/Features' >Features</a></p>
+            <p><a href='/Pricing' >Pricing</a></p>
+            <p><a href="">Refer a Restaurant</a></p>
+        </div>
                 <div className={style.columns}>
                     <h2>Company</h2>
-                    <p>About Us</p>
-                    <p>Services</p>
-                    <p>News & Blog</p>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">Services</a></p>
+                    <p><a href="">News & Blog</a></p>
                 </div>
                 <div className={style.columns}>
                     <h2>Support</h2>
-                    <p>Help center</p>
-                    <p>Privacy Policy</p>
-                    <p>Tutorial Video</p>
+                    <p><a href="">Help center</a></p>
+                    <p><a href="">Privacy Policy</a></p>
+                    <p><a href="">Tutorial Video</a></p>
                 </div>
             </div>
             <div className={style.footer_bottom}>

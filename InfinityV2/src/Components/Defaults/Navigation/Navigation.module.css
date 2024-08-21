@@ -34,20 +34,35 @@
 }
 
 .btn_register {
+    color: white;
     display: flex; 
     align-items: center; 
     justify-content: center;
+    border: none;
     background-color: var(--color-primary-green);
     text-decoration: none;
     border-radius: 5px;
     width: 160px;
     height: 46px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
-.btn_register:hover{
+
+.btn_register a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; 
+}
+
+.btn_register:hover {
     background-color: white;
-    color: var(--color-primary-green);
     border: 2px solid var(--color-primary-green);
 }
+
+.btn_register:hover a {
+    color: var(--color-primary-green); 
+}
+
 .navList li a:hover {
     text-decoration: none;
     color: var(--color-primary-green);
@@ -76,13 +91,7 @@
     justify-content: space-between;
     width: 66%;
 }
-.nav a{
-    text-decoration: none;
-    color: white;
-}
-.nav a:hover{
-    color: var(--color-primary-green);
-}
+
 
 @media screen and (max-width: 768px) {
     .navbar {

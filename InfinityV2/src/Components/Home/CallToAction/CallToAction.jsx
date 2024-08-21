@@ -17,7 +17,8 @@ const CallToAction = () => {
 <div className={styles.button}>
 <div className={styles.labelName}>
     <button>
-    Get Started</button>
+      <a href="/Register">Get Started</a> 
+       </button>
     </div>
 </div>
 </div>
@@ -25,7 +26,8 @@ const CallToAction = () => {
 <div className={styles.button1}>
 <div className={styles.labelName}>
     <button>
-    Purchase Now</button>
+      <a href="/Pricing">Purchase Now</a> 
+    </button>
     </div>
 </div>
 </div>
