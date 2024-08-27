@@ -5,57 +5,76 @@ import logo3 from'../../../assets/Testimonials/Logo (3).png'
 import logo4 from'../../../assets/Testimonials/Logo (4).png'
 import logo5 from'../../../assets/Testimonials/Logo (5).png'
 import ceo from'../../../assets/Testimonials/picture.png'
-import right from'../../../assets/Testimonials/chevron-right.png'
+// import right from'../../../assets/Testimonials/chevron-right.png'
+import { useState } from 'react';
 
+const testimonials = [
+	{
+	  image: ceo, // Directly assign the imported image
+	  quote: `"Speed of service is better for everyone. Not having to wait in line means more chance of upselling and that's better for everyone."`,
+	  author: 'Jack Manzi',
+	  position: 'CEO | SAGA BAY',
+	  business: 'RESTAURANT',
+	},
+	{
+	  image: ceo,
+	  quote: `"Speed of service is better for everyone. Not having to wait in line means more chance of upselling and that's better for everyone."`,
+	  author: 'Jack Manzi',
+	  position: 'CEO | SAGA BAY',
+	  business: 'RESTAURANT',
+	},
+	{
+	  image: ceo,
+	  quote: `"Speed of service is better for everyone. Not having to wait in line means more chance of upselling and that's better for everyone."`,
+	  author: 'Jack Manzi',
+	  position: 'CEO | SAGA BAY',
+	  business: 'RESTAURANT',
+	},
+  ];
+  
 
 const Testimonials = () => {
-  	return (
-    		<div className={styles.featureSection}>
-      			<b className={styles.trustedByOver}>Trusted by over 120,000 restaurants of all concepts</b>
-      			<div className={styles.featureSectionChild} />
-      			<div className={styles.frameParent}>
-        				<div className={styles.frameWrapper}>
-          					<div className={styles.frameGroup}>
-            						<div className={styles.restaurantWrapper}>
-              							<div className={styles.restaurant}>RESTAURANT</div>
-            						</div>
-            						<div className={styles.speedOfService}>“Speed of service is better for everyone. Not having to do the administrative work of cashing out that’s better for everyone. ”</div>
-          					</div>
-        				</div>
-        				<div className={styles.jackManziParent}>
-          					<b className={styles.jackManzi}>Jack Manzi</b>
-          					<div className={styles.ceoParent}>
-            						<div className={styles.ceo}>{`CEO `}</div>
-            						<div className={styles.frameChild} />
-            						<div className={styles.ceo}>SAGA BAY</div>
-          					</div>
-        				</div>
-      			</div>
-      			<img className={styles.featureSectionItem} alt="" src={ceo}/>
-      			<div className={styles.backParent}>
-        				<div className={styles.back}>
-          					<img className={styles.chevronRightIcon} alt="" src={right} />
-        				</div>
-        				<div className={styles.back1}>
-          					<img className={styles.chevronRightIcon1} alt="" src={right} />
-        				</div>
-      			</div>
-      			<div className={styles.ellipseParent}>
-        				<div className={styles.frameItem} />
-        				<div className={styles.frameItem} />
-        				<div className={styles.frameItem} />
-        				<div className={styles.frameChild1} />
-      			</div>
-      			<div className={styles.logosWrapper}>
-        				<div className={styles.logos}>
-          					<img className={styles.logoIcon} alt="" src={logo1} />
-          					<img className={styles.logoIcon1} alt="" src={logo2} />
-          					<img className={styles.logoIcon2} alt="" src={logo3} />
-          					<img className={styles.logoIcon3} alt="" src={logo4} />
-          					<img className={styles.logoIcon4} alt="" src={logo5}/>
-        				</div>
-      			</div>
-    		</div>);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  return (
+    <div className={styles.container}>
+      <h2 className={styles.title}>Trusted by over 150,000+ RESTAURANTs <br /> of all concepts</h2>
+      <div className={styles.logos}>
+        <img src={logo1} alt="Logo 1" />
+        <img src={logo2} alt="Logo 2" />
+        <img src={logo3} alt="Logo 3" />
+        <img src={logo4} alt="Logo 4" />
+        <img src={logo5} alt="Logo 5" />
+      </div>
+      <div className={styles.testimonialContainer}>
+        <img 
+          src={testimonials[currentTestimonial].image} 
+          alt="Testimonial" 
+          className={styles.testimonialImage}
+        />
+        <div className={styles.testimonialContent}>
+		  <div className={styles.text_container}>
+			<p className={styles.type}>{testimonials[currentTestimonial].business}</p>	
+			<p className={styles.quote}>{testimonials[currentTestimonial].quote}</p>
+			<p className={styles.author}>{testimonials[currentTestimonial].author}</p>
+			<p className={styles.position}>{testimonials[currentTestimonial].position}</p>
+		  </div>
+        </div>
+      </div>
+      <div className={styles.carouselControls}>
+        <button onClick={prevTestimonial} className={styles.carouselButton}>&lt;</button>
+        <button onClick={nextTestimonial} className={styles.carouselButton}>&gt;</button>
+      </div>
+    </div>
+  );
 };
 
 export default Testimonials;

@@ -452,4 +452,9 @@ body {
     color: #000;
     font-family: var(--body-xlarge-regular);
 }
-
+@media (max-width:736px) {
+    .frameParent{
+        display: block;
+        overflow: auto;
+    }
+}

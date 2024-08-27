@@ -1,171 +1,175 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10% 80px;
-    background-color: #ffffff;
-  }
-  
-  .content {
-    flex: 1;
-    max-width: 50%;
-  }
-  .content h1{
-    font-size: var(--);
-    font-weight: 700;
-    line-height: 50.6px;
-    letter-spacing: -0.1px;
-    text-align: left;
-    color: black;
-  }
-  
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-  }
-  
-  .buttonGroup {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .button {
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 160px;
-    height: 46px;
-  }
-  
-  .primaryButton {
-    background-color: #00a86b;
-    color: white;
-    border: none;
-    width: 160px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 5%;
+  background-color: #ffffff;
 }
 
-.primaryButton a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for the color */
+.content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: black;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.description {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 160px;
+  height: 46px;
+}
+
+.primaryButton, .secondaryButton {
+  width: 160px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.primaryButton {
+  background-color: var(--color-primary-green);
+  color: white;
+  border: none;
+}
+
+.primaryButton a, .secondaryButton a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .primaryButton:hover {
-    background-color: white;
-    border: 2px solid #00a86b;
+  background-color: white;
+  border: 1px solid var(--color-primary-green);
 }
 
 .primaryButton:hover a {
-    color: #00a86b; 
+  color: var(--color-primary-green);
 }
 
-  
-  .secondaryButton {
-    background-color: white;
-    color: #00a86b;
-    border: 2px solid #00a86b;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .secondaryButton a{
-    color: #00a86b;
-    text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for the color */
-  }
-  .secondaryButton:hover {
-    background-color: #00a86b;
-    color: white;
-    border: none;
-    width: 160px;
-    height: 46px;
-  }
-  .secondaryButton:hover a{
-    color: white;
-  }
-  .imageContainer {
-    flex: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 60px;
-  }
-  
-  .circleBackground:nth-child(1){
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-color: #3AD48759;
-    border-radius: 50%;
-    z-index: 0;
-  }
-  
-  .circleBackground:nth-child(2){
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    background-color: #55C88E;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  .circleBackground:nth-child(3){
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background-color: #01A653;
-    border-radius: 50%;
-    z-index: 2;
-  }
+.secondaryButton {
+  background-color: white;
+  color: var(--color-primary-green);
+  border: 1px solid var(--color-primary-green);
+}
 
-  
-  .image {
-    position: relative;
-    max-width: 80%;
-    height: auto;
-    z-index: 3;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
+.secondaryButton:hover {
+  background-color: var(--color-primary-green);
+  color: white;
+  border: none;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.circleBackground {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circleBackground:nth-child(1) {
+  width: 80%;
+  height: 0;
+  padding-bottom: 80%; 
+  background-color: #3AD48759;
+  z-index: 0;
+}
+
+.circleBackground:nth-child(2) {
+  width: 67.5%;
+  height: 0;
+  padding-bottom: 67.5%;
+  background-color: #55C88E;
+  z-index: 1;
+}
+
+.circleBackground:nth-child(3) {
+  width: 55%;
+  height: 0;
+  padding-bottom: 55%; 
+  background-color: #01A653;
+  z-index: 2;
+}
+
+
+.image {
+  position: relative;
+  max-width: 80%;
+  height: auto;
+  z-index: 3;
+}
+
+@media (max-width: 1024px) {
+  .container {
       flex-direction: column;
       padding: 2rem;
-    }
-  
-    .content {
+  }
+
+  .content {
       max-width: 100%;
       margin-bottom: 2rem;
-      flex-direction: column;
-    }
-  
-    .title {
-      font-size: 2rem;
-    }
-  
-    .circleBackground {
-      width: 300px;
-      height: 300px;
-      display: none;
-    }
-    
-    .imageContainer {
-      margin-left: 0;
-      display: flex;
-    }
   }
+
+  .imageContainer {
+      margin-left: 0;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1 / 1;
+  }
+
+  .circleBackground {
+      display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonGroup {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .button, .primaryButton, .secondaryButton {
+      width: 100%;
+  }
+} 
