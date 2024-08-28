@@ -12,14 +12,17 @@
 }
 
 .featurePageOne .image img {
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
 }
 
 .details {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: max-content;
+    width: 100%;
+    max-width: 450px;
 }
 
 .title {
@@ -28,7 +31,7 @@
 }
 
 .title p {
-    max-width: 450px;
+    max-width: 100%;
 }
 
 .detailPoints img {
@@ -40,4 +43,49 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .featurePageOne {
+        justify-content: center;
+    }
+    
+    .details {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .featurePageOne {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title {
+        text-align: center;
+    }
+    
+    .point {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .featurePageOne {
+        width: 95%;
+    }
+    
+    .title {
+        font-size: 16px;
+    }
+    
+    .point {
+        font-size: 16px;
+    }
+    
+    .detailPoints img {
+        width: 24px;
+    }
 }

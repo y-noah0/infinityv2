@@ -12,14 +12,17 @@
 }
 
 .featurePageThree .image img {
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
 }
 
 .details {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: max-content;
+    width: 100%;
+    max-width: 450px;
 }
 
 .title {
@@ -28,7 +31,7 @@
 }
 
 .title p {
-    max-width: 450px;
+    max-width: 100%;
 }
 
 .detailPoints img {
@@ -44,5 +47,52 @@
 }
 
 .point p {
-    max-width: 450px;
+    max-width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .featurePageThree {
+        justify-content: center;
+    }
+    
+    .details {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .featurePageThree {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+    }
+    
+    .title {
+        text-align: center;
+    }
+    
+    .point {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .featurePageThree {
+        width: 95%;
+    }
+    
+    .title {
+        font-size: 16px;
+    }
+    
+    .point {
+        font-size: 16px;
+    }
+    
+    .detailPoints img {
+        width: 24px;
+    }
 }

@@ -1,11 +1,13 @@
-import React from 'react';
 import styles from './Register.module.css';
 import logo from '../../../assets/Authentication/logo.png'; 
 import backgroundImage from '../../../assets/Authentication/coffeshop.png'; 
+import Navigation from '../../Defaults/Navigation/Navigation';
+import Footer from '../../Defaults/Footer/Footer';
 
 const Register = () => {
     return (
         <div className={styles.signupPage}>
+            <Navigation />
             <div className={styles.leftSection}>
                 <img src={logo} alt="Logo" className={styles.logo} />
                 <img src={backgroundImage} alt="Background" className={styles.backgroundImage} />
@@ -32,6 +34,7 @@ const Register = () => {
                     <p className={styles.signinPrompt}>Already have an account? <a href="/login">Sign in</a></p>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

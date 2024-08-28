@@ -1,10 +1,14 @@
 import styles from './signin.module.css';
 import backgroundImage from '../../../assets/Authentication/coffeshop.png';
 import { Link } from 'react-router-dom';
+import Navigation from '../../Defaults/Navigation/Navigation';
+import Footer from '../../Defaults/Footer/Footer';
 
 const SignIn = () => {
     return (
+        
         <div className={styles.featureSection}>
+            <Navigation />
             <img
                 className={styles.featureSectionChild}
                 alt="Coffee Shop"
@@ -34,6 +38,7 @@ const SignIn = () => {
                 </form>
                <Link to={'/Register'}> <div className={styles.newToInfinity}>New to Infinity POS?</div></Link>
             </div>
+            <Footer />
         </div>
     );
 };
