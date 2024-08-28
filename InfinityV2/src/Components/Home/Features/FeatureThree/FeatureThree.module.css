@@ -1,5 +1,6 @@
 .FeatureThree{
-    background-color: #f7fcf3;
+    background-color: #e8f1df;
+    padding: 10px 50px;
 }
 .text_container{
     display: flex;
@@ -8,10 +9,13 @@
     color: black;
 }
 .card{
-    background: #ffffff;
+    /* background: #ffffff; */
     margin: 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    width: 381px;
+    height: 481;
 }
 .cards_up{
     display: flex;
@@ -19,7 +23,7 @@
 .card h2{
     color: black;
     font-family: Outfit;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 31.2px;
     text-align: left;   
@@ -36,10 +40,18 @@
 
 }
 .card img{
-    height: 70%;
-    width: 70%;
-    background: #ffffff;
+    height: 481;
+    width: 381px;
     border-radius: 10px;
+}
+.links{
+    color: var(--color-primary-green);
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-decoration: none;
 }
 @media (max-width: 767px) {
     .cards_up{

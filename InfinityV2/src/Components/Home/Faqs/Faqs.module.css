@@ -1,154 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-body {
-    margin: 0;
-    line-height: normal;
-}
-
 :root {
-   
-    --body-xlarge-regular: Outfit;
-    
-
+    --body-xlarge-regular: 'Outfit', sans-serif;
     --body-xlarge-regular-size: 18px;
     --heading-h3-size: 32px;
-
     --color-white: #fff;
     --color-black: #000;
     --greyscale-600: #687588;
     --primary-300: #a7e071;
-    
-
     --br-10xs: 3px;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: var(--body-xlarge-regular);
 }
 
 .featureSection {
     width: 100%;
-    position: relative;
+    /* height: 100vh; */
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-white);
-    height: 1104px;
-    overflow: hidden;
-    flex-shrink: 0;
     text-align: center;
-    font-size: var(--heading-h3-size);
     color: var(--color-black);
-    font-family: var(--body-xlarge-regular);
+    position: relative;
+    overflow: hidden;
 }
 
 .featureSectionChild {
     position: absolute;
-    top: 411px;
-    left: calc(50% - 289px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     filter: blur(1000px);
     border-radius: 50%;
     background-color: var(--primary-300);
-    width: 578px;
-    height: 578px;
-}
-
-.featureSectionInner {
-    position: absolute;
-    top: calc(50% - 340px);
-    left: calc(50% - 263px);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    width: 80%;
+    max-width: 578px;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
 }
 
 .frequentlyAskedQuestions {
-    position: absolute;
-    top: 117px;
-    left: calc(50% - 250px);
-    line-height: 125%;
-    display: inline-block;
-    width: 500px;
     font-size: var(--heading-h3-size);
-    font-weight: bold;
+    font-weight: 700;
+    margin-bottom: 40px;
+    max-width: 500px;
+    z-index: 2;
 }
 
 .frameParent {
-    position: absolute;
-    top: 263px;
-    left: calc(50% - 515px);
-    width: 1030px;
+    width: 100%;
+    max-width: 1030px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: stretch;
     gap: 30px;
-    text-align: left;
-    font-size: var(--body-xlarge-regular-size);
+    z-index: 2;
 }
 
 .fqaCard {
-    width: 100%;
+    width: 95%;
     border-radius: var(--br-10xs);
     background-color: var(--color-white);
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.fqaCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .fqaCardHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     font-size: var(--body-xlarge-regular-size);
-    font-weight: bold;
+    font-weight: 700;
     color: var(--greyscale-600);
 }
 
 .question {
     flex-grow: 1;
+    text-align: left;
 }
 
 .arrowIcon {
     width: 24px;
     height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.fqaCard.active .arrowIcon {
+    transform: rotate(180deg);
 }
 
 .answer {
-    padding: 20px;
-    border-top: 1px solid var(--greyscale-600);
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
     background-color: #f9f9f9;
     color: var(--greyscale-600);
-    line-height: 1.5;
+    transition: max-height 0.5s ease, padding 0.5s ease;
 }
+
+.fqaCard.active .answer {
+    max-height: 500px; /* Adjust this value based on your content */
+    padding: 20px;
+    border-top: 1px solid var(--greyscale-600);
+}
+
 /* Tablet Responsiveness */
 @media (max-width: 768px) {
     .featureSection {
-        height: auto;
-        padding: 20px;
-    }
-
-    .featureSectionChild {
-        top: 300px;
-        left: calc(50% - 250px);
-        width: 500px;
-        height: 500px;
-    }
-
-    .featureSectionInner {
-        top: calc(50% - 250px);
-        left: calc(50% - 200px);
+        padding: 30px 15px;
     }
 
     .frequentlyAskedQuestions {
-        top: 80px;
-        left: calc(50% - 200px);
-        width: 400px;
         font-size: 28px;
+        margin-bottom: 30px;
     }
 
     .frameParent {
-        top: 200px;
-        left: calc(50% - 400px);
-        width: 800px;
+        gap: 20px;
     }
 
-    .fqaCardHeader, .answer {
+    .fqaCardHeader {
+        padding: 15px;
+    }
+
+    .fqaCard.active .answer {
         padding: 15px;
     }
 }
@@ -156,40 +145,30 @@ body {
 /* Phone Responsiveness */
 @media (max-width: 480px) {
     .featureSection {
-        height: auto;
-        padding: 15px;
-    }
-
-    .featureSectionChild {
-        top: 200px;
-        left: calc(50% - 150px);
-        width: 300px;
-        height: 300px;
-    }
-
-    .featureSectionInner {
-        top: calc(50% - 150px);
-        left: calc(50% - 150px);
+        padding: 80px 10px;
     }
 
     .frequentlyAskedQuestions {
-        top: 60px;
-        left: calc(50% - 150px);
-        width: 300px;
         font-size: 24px;
+        margin-bottom: 20px;
     }
 
     .frameParent {
-        top: 150px;
-        left: calc(50% - 150px);
-        width: 300px;
+        gap: 15px;
     }
 
-    .fqaCardHeader, .answer {
-        padding: 10px;
-    }
-
-    .fqaCard {
+    .fqaCardHeader {
+        padding: 12px;
         font-size: 16px;
+    }
+
+    .fqaCard.active .answer {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .arrowIcon {
+        width: 20px;
+        height: 20px;
     }
 }

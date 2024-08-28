@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
 import styles from './Faqs.module.css';
 import arrowDown from '../../../assets/Faq/arrow2-down.png';
 import arrowUp from '../../../assets/Faq/arrow2-up.png';  
