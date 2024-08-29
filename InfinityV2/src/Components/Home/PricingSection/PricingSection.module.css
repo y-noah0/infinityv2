@@ -1,0 +1,145 @@
+.pricingContainer {
+    margin: 80px 20px;
+    text-align: center;
+    color: black;
+  }
+  
+  .pricingHeader {
+    margin-bottom: 30px;
+  }
+  
+  .pricingHeader h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .pricingHeader p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+    margin: 0;
+  }
+  
+  .pricingPlans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .pricingPlan {
+    background-color: white;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .pricingPlan h2 {
+    font-size: 13.55px;
+    font-weight: 700;
+    line-height: 21.68px;
+    letter-spacing: 0.22581025958061218px;
+    text-align: left;
+    margin: 0px;
+  }
+  
+  .price {
+    font-size: 34.01px;
+    font-weight: 500;
+    line-height: 37.42px;
+    text-align: left;
+  }
+  
+  .price span {
+    font-family: IBM Plex Sans;
+    font-size: 9.07px;
+    font-weight: 400;
+    line-height: 13.61px;
+    text-align: left;
+
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .choosePlan {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #28a745;
+    border: 1px solid var(--color-primary-green);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .choosePlan:hover {
+    background-color: var(--color-primary-green);
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .featuresList {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  .featureItem {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 20.25px;
+    letter-spacing: 0.16877920925617218px;
+    text-align: left;
+    color: #687588;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .featureItem::before {
+    content: "";
+    background-image: url('../../../assets/Pricing/Subtract.png');
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (min-width: 768px) {
+    .pricingPlans {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .pricingHeader h1 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .pricingPlans {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .pricingHeader h1 {
+      font-size: 2.5rem;
+    }
+  
+    .pricingContainer {
+      padding: 50px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .pricingPlans {
+      height: 728.1px;
+    }
+  }
