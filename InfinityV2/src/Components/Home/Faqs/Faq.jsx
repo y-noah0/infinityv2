@@ -1,19 +1,27 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import styles from './Faqs.module.css';
 import arrowDown from '../../../assets/Faq/arrow2-down.png';
-import arrowUp from '../../../assets/Faq/arrow2-up.png';  
-
+import arrowUp from '../../../assets/Faq/arrow2-up.png';
 
 function FaqItem({ question, answer }) {
     const [isOpen, setIsOpen] = useState(false);
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        if (contentRef.current) {
+            contentRef.current.style.maxHeight = isOpen 
+                ? `${contentRef.current.scrollHeight}px` 
+                : '0px';
+        }
+    }, [isOpen]);
 
     const toggleOpen = () => {
         setIsOpen(!isOpen);
     };
 
     return (
-        <div className={styles.fqaCard} onClick={toggleOpen}>
+        <div className={`${styles.fqaCard} ${isOpen ? styles.active : ''}`} onClick={toggleOpen}>
             <div className={styles.fqaCardHeader}>
                 <div className={styles.question}>{question}</div>
                 <img 
@@ -22,14 +30,16 @@ function FaqItem({ question, answer }) {
                     alt="Toggle Answer" 
                 />
             </div>
-            {isOpen && (
-                <div className={styles.answer}>
-                    {answer}
-                </div>
-            )}
+            <div 
+                className={styles.answer} 
+                ref={contentRef}
+            >
+                <div className={styles.answerContent}>{answer}</div>
+            </div>
         </div>
     );
 }
+
 
 function Faq() {
     const faqData = [

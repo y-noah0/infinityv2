@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .description_link {
@@ -34,7 +34,8 @@
 .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: baseline;
     padding: 4%;
 }
 
@@ -97,9 +98,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
+
 
     .logo {
         width: 100px;

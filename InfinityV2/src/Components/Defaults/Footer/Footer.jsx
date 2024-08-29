@@ -38,12 +38,12 @@ function Footer() {
 
                 </div>
                 <div className={style.columns}>
-            <h2>Customers</h2>
-            <p><a href='/Login' >Sign In</a></p>
-            <p><a href='/Features' >Features</a></p>
-            <p><a href='/Pricing' >Pricing</a></p>
-            <p><a href="">Refer a Restaurant</a></p>
-        </div>
+                    <h2>Customers</h2>
+                    <p><a href='/Login' >Sign In</a></p>
+                    <p><a href='/Features' >Features</a></p>
+                    <p><a href='/Pricing' >Pricing</a></p>
+                    <p><a href="">Refer a Restaurant</a></p>
+                </div>
                 <div className={style.columns}>
                     <h2>Company</h2>
                     <p><a href="">About Us</a></p>

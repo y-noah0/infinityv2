@@ -16,37 +16,45 @@ export default function PricingSection(){
               <button className={styles.choosePlan}>Choose plan</button>
               <h3>Pricing:</h3>
               <ul className={styles.featuresList}>
-                <li className={styles.featureItem}>Annual Subscription: $1,079.89/year (10% discount)</li>
-                <li className={styles.featureItem}>Support: Email</li>
-                <li className={styles.featureItem}>Up to 3 users</li>
+                <li className={styles.featureItem}>Annual Subscription: $539.89/year (10% discount)</li>
+                <li className={styles.featureItem}>Hardware Bundle: $349.99 (one-time cost)</li>
+                <li className={styles.featureItem}>One-Time Purchase: $1450</li>
               </ul>
               <h3>Software Package:</h3>
               <ul className={styles.featuresList}>
-                <li className={styles.featureItem}>Basic Features</li>
-                <li className={styles.featureItem}>Support: Email</li>
-                <li className={styles.featureItem}>Up to 3 users</li>
+                <li className={styles.featureItem}>1 POS terminal</li>
+                <li className={styles.featureItem}>1 receipt printer</li>
+                <li className={styles.featureItem}>Basic reporting (daily sales, inventory)</li>
+                <li className={styles.featureItem}>User-Friendly POS Interface</li>
+                <li className={styles.featureItem}>Waiter Report Generation</li>
+                <li className={styles.featureItem}>Work Period Management</li>
               </ul>
              
             </div>
     
             <div className={styles.pricingPlan}>
-              <h2>Professional Plan</h2>
-              <p className={styles.price}>$99.99<span> /month</span></p>
-              <button className={styles.choosePlan}>Choose plan</button>
-              <h3>Pricing</h3>
-              <ul className={styles.featuresList}>
-                <li className={styles.featureItem}>All Starter Features</li>
-                <li className={styles.featureItem}>Support: Phone & Email</li>
-                <li className={styles.featureItem}>Up to 10 users</li>
-                <li className={styles.featureItem}>Advanced Analytics</li>
-              </ul>
-              <h3>Software Package</h3>
-              <ul className={styles.featuresList}>
-                <li className={styles.featureItem}>All Starter Features</li>
-                <li className={styles.featureItem}>Support: Phone & Email</li>
-                <li className={styles.featureItem}>Up to 10 users</li>
-                <li className={styles.featureItem}>Advanced Analytics</li>
-              </ul>
+                <p className={styles.popular}>MOST POPULAR</p>
+                <div className={styles.content}>
+                    <h2>Professional Plan</h2>
+                    <p className={styles.price}>$99.99<span> /month</span></p>
+                    <button className={styles.choosePlan}>Choose plan</button>
+                    <h3>Pricing</h3>
+                    <ul className={styles.featuresList}>
+                        <li className={styles.featureItem}>Annual Subscription: $1,079.89/year (10% discount)</li>
+                        <li className={styles.featureItem}>Hardware Bundle: $699.99 (one-time cost)</li>
+                        <li className={styles.featureItem}>One-Time Purchase: $2200</li>
+                    </ul>
+                    <h3>Software Package</h3>
+                    <ul className={styles.featuresList}>
+                        <li className={styles.featureItem}>2 POS terminals</li>
+                        <li className={styles.featureItem}>2 receipt printers</li>
+                        <li className={styles.featureItem}>Advanced reporting (sales by employee, peak hours analysis)</li>
+                        <li className={styles.featureItem}>Priority email support</li>
+                        <li className={styles.featureItem}>User-Friendly POS Interface</li>
+                        <li className={styles.featureItem}>Waiter Report Generation</li>
+                        <li className={styles.featureItem}>Work Period Management</li>
+                    </ul>
+                    </div>
             </div>
     
             <div className={styles.pricingPlan}>
@@ -55,17 +63,19 @@ export default function PricingSection(){
               <button className={styles.choosePlan}>Choose plan</button>
               <h3>Pricing</h3>
               <ul className={styles.featuresList}>
-                <li className={styles.featureItem}>All Professional Features</li>
-                <li className={styles.featureItem}>Priority Support</li>
-                <li className={styles.featureItem}>Unlimited users</li>
-                <li className={styles.featureItem}>Dedicated Account Manager</li>
+                <li className={styles.featureItem}>Annual Subscription: $2,159.89/year (10% discount)</li>
+                <li className={styles.featureItem}>Hardware Bundle: Custom quote based on requirements</li>
               </ul>
               <h3>Software Package</h3>
               <ul className={styles.featuresList}>
-                <li className={styles.featureItem}>All Professional Features</li>
-                <li className={styles.featureItem}>Priority Support</li>
-                <li className={styles.featureItem}>Unlimited users</li>
-                <li className={styles.featureItem}>Dedicated Account Manager</li>
+                <li className={styles.featureItem}>Up to 5 POS terminals</li>
+                <li className={styles.featureItem}>Up to 5 receipt printers</li>
+                <li className={styles.featureItem}>Comprehensive reporting suite</li>
+                <li className={styles.featureItem}>Inventory forecasting</li>
+                <li className={styles.featureItem}>24/7 phone and email support</li>
+                <li className={styles.featureItem}>User-Friendly POS Interface</li>
+                <li className={styles.featureItem}>Waiter Report Generation</li>
+                <li className={styles.featureItem}>Work Period Management</li>
               </ul>
             </div>
     
@@ -75,10 +85,9 @@ export default function PricingSection(){
               <button className={styles.choosePlan}>Choose plan</button>
               <h3>Pricing</h3>
               <ul className={styles.featuresList}>
-                <li className={styles.featureItem}>All Business Features</li>
-                <li className={styles.featureItem}>Custom Solutions</li>
-                <li className={styles.featureItem}>24/7 Support</li>
-                <li className={styles.featureItem}>Personalized Onboarding</li>
+                <li className={styles.featureItem}>Custom pricing based on specific requirements</li>
+                <li className={styles.featureItem}>Contact our sales team for a personalized quote</li>
+                <li className={styles.featureItem}>Estimate: One-Time Purchase: $8000</li>
               </ul>
               <h3>Software Package</h3>
               <ul className={styles.featuresList}>
